@@ -75,7 +75,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "11679112664").split())
+    map(int, getenv("OWNER_ID", "7763435852").split())
 )  # Input type must be interger
 
 
@@ -144,7 +144,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/IamDvis/DV-MUSIC")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/HAPPY_BOTS_CHANNEL")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -212,7 +212,7 @@ autoclean = []
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://envs.sh/nAT.jpg",
+    "https://envs.sh/TZe.jpg",
 )
 
 PING_IMG_URL = getenv(
