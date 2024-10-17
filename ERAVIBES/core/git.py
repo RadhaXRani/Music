@@ -42,6 +42,10 @@ def install_req(cmd: str) -> Tuple[str, str, int, int]:
 
 
 def git():
+    if not config.UPSTREAM_REPO:
+        LOGGER(__name__).warning("No UPSTREAM_REPO configured. Skipping Git operations.")
+        return
+
     REPO_LINK = config.UPSTREAM_REPO
     if config.GIT_TOKEN:
         GIT_USERNAME = REPO_LINK.split("com/")[1].split("/")[0]
